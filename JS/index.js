@@ -79,7 +79,7 @@ function validateInputs(element) {
   var regex = {
     bookmarkName: /.{3,}/,
     bookmarkLink:
-      /^(https:\/\/|http:\/\/)(www\.)?([a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+)(\/[^\s]*)?$/i,
+      /^(https?:\/\/)(www\.)?([a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+)(\/[^\s]*)?$/i,
   };
   if (regex[element.id].test(text)) {
     element.classList.remove("is-invalid");
